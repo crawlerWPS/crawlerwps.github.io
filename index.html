@@ -111,7 +111,7 @@
 <h3 id="9-CV"><a href="#9-CV" class="headerlink" title="9.CV"></a><strong>9.CV</strong></h3><p>CV² &#x3D; <em>a</em>1&#x2F;μ + α0</p>
 <p>Coefficient of variation</p>
 <p>变异的系数</p>
-<img src="/Users/crawler/Library/Application Support/typora-user-images/image-20220317195345177.png" alt="image-20220317195345177" style="zoom:67%;" />
+<img src="../images/image-20220317195345177.png" alt="image-20220317195345177" style="zoom:67%;" />
 
 <p>The coefficient of variation (CV) is a statistical measure of the dispersion of data points in a data series around the mean. The coefficient of variation represents the ratio of the <strong>standard deviation</strong> to the <strong>mean</strong>（标准差&#x2F;平均值，表示概率分布的离散程度）, and it is a useful statistic for comparing the degree of variation from one data series to another, even if the means are drastically different from one another.</p>
 <p>The coefficient of variation shows the extent of <a target="_blank" rel="noopener" href="https://www.investopedia.com/terms/v/variability.asp">variability</a> of data in a sample in relation to the mean of the population.</p>
@@ -127,7 +127,7 @@
 <p>RNA的spike-in是一组序列已知的RNA转录本，目前普遍使用的是ERCC(<br>The External RNA Control Consortium)搞出来的一组RNA序列。当然，也可以使用序列相似度较低的物种的序列作为spike-in。如两种常见的酵母，S.pombe和S.cerevisiae，他们的序列可以作为彼此的spike-in进行后续矫正。</p>
 <p>通过在样品制备过程中，混入指定数量的spike-in，我们就可以知道不同样本中的基因绝对比表达值。如等细胞数的样本A和样本B，在每个样本中，我加入了等量的spike-in。最后分析发现，spike-in占样本A的1%，但是占样本B的5%。这表明样本A的RNA表达量也许普遍比样本B的表达量高五倍左右。</p>
 <p>下面是一个简单的草图，希望可以帮助理解，左边是细胞，右边是RNA</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/6415244-2ec5181db6b86e28.png?imageMogr2/auto-orient/strip%7CimageView2/2" alt="img"></p>
+<p><img src="/../images/2.png" alt="img"></p>
 <h3 id="14-read-counts"><a href="#14-read-counts" class="headerlink" title="14.read counts"></a>14.read counts</h3><p><strong>(1)数值概念：</strong>比对到gene A的reads数。<br><strong>(2)用途：</strong>用于换算CPM、RPKM等后续其他指标；作为基因表达差异分析的输入数值。<br>大部分<strong>差异分析软件（如DESeq和edgeR）</strong>，用原始的可比对的reads count作为输入，并用<strong>负二项分布模型估算样本间基因差异表达的概率</strong>。</p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0f5a9616efe2">https://www.jianshu.com/p/0f5a9616efe2</a></p>
 <p>原始测序数据经过处理得到分子计数矩阵（count matrix），或者reads count （读数矩阵）。这取决于单细胞文库构建方案中是否包含唯一分子标识符（UMI， unique molecular identifiers）（参考下面的Box1. Hemberg-lab单细胞转录组数据分析（六）- 构建表达矩阵，UMI介绍）。原始数据处理流程如Cell Ranger, indrops, SEQC, zUMIs负责测序数据质控，确定reads来源的细胞 (barcodes) （这一步也称为demultiplexing）和mRNA分子 （生信宝典注：单细胞测序不只获得mRNA，更准确说是带poly-A尾巴的RNA，包括mRNA和lncRNA等）、基因组比对和定量。获得的reads或count矩阵的行数等于barcodes的数目，列数等于基因数目（生信宝典注：也可能反过来，行为基因，列为barcodes）。<strong>这里使用术语barcodes而不是cell，因为分配给相同barcode的所有reads可能并不只是来源于同一细胞。barcode可能会错误地标记多个细胞（doublet），也可能不会标记任何细胞（空液滴&#x2F;孔） 。</strong> </p>
@@ -138,7 +138,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl1ptzaup0003h50aeje5fq1j" data-title="日常积累" class="article-share-link">Teilen</a>
+      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl1pu4kkr00032m0aavu2e45i" data-title="日常积累" class="article-share-link">Teilen</a>
       
       
       
@@ -182,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" data-id="cl1ptzaun0001h50a6m924zhf" data-title="关于配置hexo+github" class="article-share-link">Teilen</a>
+      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" data-id="cl1pu4kkp00012m0a5lv9awq3" data-title="关于配置hexo+github" class="article-share-link">Teilen</a>
       
       
       

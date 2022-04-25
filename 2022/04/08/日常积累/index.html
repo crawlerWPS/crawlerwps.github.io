@@ -16,8 +16,11 @@
 <meta property="og:image" content="http://https/images/image-20220317201110705.png">
 <meta property="og:image" content="http://https/images/image-20220317174436841.png">
 <meta property="og:image" content="http://https/images/2.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1210702/201709/1210702-20170904230759163-1861965471.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1210702/201709/1210702-20170904230915491-1467284346.png">
+<meta property="og:image" content="https://images2017.cnblogs.com/blog/1210702/201709/1210702-20170904231008522-198171358.png">
 <meta property="article:published_time" content="2022-04-08T02:36:19.000Z">
-<meta property="article:modified_time" content="2022-04-08T03:17:30.302Z">
+<meta property="article:modified_time" content="2022-04-25T02:19:30.666Z">
 <meta property="article:author" content="crawler">
 <meta property="article:tag" content="生物信息">
 <meta name="twitter:card" content="summary">
@@ -66,12 +69,12 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Buscar"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://https://crawlerwps.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://https://crawlerwps.github.io"></form>
       </div>
     </div>
   </div>
@@ -140,11 +143,37 @@
 <p>尽管reads data和 count data 的测量噪声级别不同 （生信宝典注：基于UMI的数据，获得的是分子计数，count data，噪声更低），但在分析流程中的处理步骤是相同的。为简单起见，在本教程中，我们将数据称为计数矩阵（count data）。在reads和计数矩阵的结果不同的地方，将会特别提到reads矩阵。</p>
 <h3 id="15-构建文库"><a href="#15-构建文库" class="headerlink" title="15.构建文库"></a>15.构建文库</h3><p>该<strong>构建方法</strong>包括以下步骤：对<strong>单细胞</strong>中的RNA进行反转录得到cDNA；用扩增引物对cDNA进行预扩增，得到扩增cDNA；对扩增cDNA进行片段化<strong>文库构建</strong>，得到<strong>单细胞</strong>的转录组测序<strong>文库</strong>；其中，扩增引物中的dTTP替换为dUTP。</p>
 <h3 id="16-cDNA"><a href="#16-cDNA" class="headerlink" title="16.cDNA"></a>16.cDNA</h3><p><strong>Complementary DNA</strong> (cDNA) is a DNA copy of a messenger RNA (mRNA) molecule produced by reverse transcriptase, a DNA polymerase that can use either DNA or RNA as a template.</p>
+<h3 id="17-NGS数据格式介绍"><a href="#17-NGS数据格式介绍" class="headerlink" title="17.NGS数据格式介绍"></a>17.<a target="_blank" rel="noopener" href="https://www.cnblogs.com/freescience/p/7476398.html">NGS数据格式介绍</a></h3><p>一般情况下，从Illumina平台上得到的测序，其数据格式是Fastq格式，可以称之为原始数据（Raw data）。事实上直接的下机数据是显微拍摄得到的图像信息。但是一般都会用Bcl2Fastq软件将图像信息转化成Fastq文件。</p>
+<p>如果测序是SE：则只有一个fastq文件，如果是PE测序，则得到两个Fastq文件。</p>
+<p>PE的数据特点有：</p>
+<p>（1）两个Fastq文件中分别包含数据1和2，来区分前后端；</p>
+<p>（2）这2个文件的行数必须一致；</p>
+<p>（3）相同的行上的数据来自同一条DNA片段双末端的测序数据；</p>
+<p>（4）Fastq以每4行为一个单位，表示一条reads的信息。</p>
+<blockquote>
+<p>@HISEQ:6:1101:1703:2071#GCAATGGC&#x2F;1</p>
+<p>AGAATGCGTCATTCTGCGGAACTCATCCGACTGAATACCGAAAAGCAGAATCTGATCCTGGTTTCT</p>
+<p>GCCATAAAGTAGCGCGAGCACACAGACGTCTGCGCGCCTGCGGTGACGGCGGTGCGGGT</p>
+<ul>
+<li></li>
+</ul>
+<p>&#96;`&#96;&#96;fdbeaeddf]d_ffNddPP\dedd]N[XPdffP\NeNdbff]faeafPdeff]PbPPP[efP^YePY\edfefO[</p>
+<p>NNNbcM_effc\OcfcOWbffffMXcaMcffa_cYcYYbccYM]b</p>
+</blockquote>
+<p>第一行 序列名称</p>
+<p>第二行 序列的碱基组成</p>
+<p>第三行 序列信息，或者直接以“+”做标记</p>
+<p>第四行 碱基的质量</p>
+<p><img src="https://images2017.cnblogs.com/blog/1210702/201709/1210702-20170904230759163-1861965471.png" alt="img"></p>
+<p>现在的Illimina使用的质量格式为Phred+33，和Sanger的碱基质量基本一致；碱基质量使用Q（Phred值）表示，其计算公式为：</p>
+<p><img src="https://images2017.cnblogs.com/blog/1210702/201709/1210702-20170904230915491-1467284346.png" alt="img"></p>
+<p>碱基质量与错误率的关系为：</p>
+<p> <img src="https://images2017.cnblogs.com/blog/1210702/201709/1210702-20170904231008522-198171358.png" alt="img"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl1pv2a7800014n0a53xw8iw8" data-title="日常积累" class="article-share-link">Compartir</a>
+      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl2e3fcbi0003zs0ahuje40k4" data-title="日常积累" class="article-share-link">Teilen</a>
       
       
       
@@ -158,7 +187,7 @@
   
   
     <a href="/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Viejo</strong>
+      <strong class="article-nav-caption">Älter</strong>
       <div class="article-nav-title">关于配置hexo+github</div>
     </a>
   
@@ -174,7 +203,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categorías</h3>
+    <h3 class="widget-title">Kategorien</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%A7%AF%E6%B0%B4%E6%88%90%E6%B8%8A/">小知识积水成渊</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%85%8D%E7%BD%AEtips/">配置tips</a></li></ul>
     </div>
@@ -194,7 +223,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Nube de Tags</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
       <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/" style="font-size: 10px;">生物信息</a>
     </div>
@@ -203,7 +232,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archivos</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a></li></ul>
     </div>
@@ -213,7 +242,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Posts recientes</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
         
@@ -239,7 +268,7 @@
     <div id="footer-info" class="inner">
       
       &copy; 2022 crawler<br>
-      Construido por <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>

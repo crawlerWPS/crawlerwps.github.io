@@ -166,11 +166,33 @@
 <h3 id="20-CPM"><a href="#20-CPM" class="headerlink" title="20.CPM"></a>20.<strong>CPM</strong></h3><p>– Counts per million. </p>
 <h3 id="21-UMI"><a href="#21-UMI" class="headerlink" title="21.UMI"></a>21.<strong>UMI</strong></h3><p>– Unique molecular identifier. A randomized nucleotide sequence incorporated into the complementary DNA in the initial steps of RNA-seq protocol. Because this sequence is then carried in the subsequent amplification steps, it can be used to recognize multiple sequencing reads originating from the same physical mRNA transcript. </p>
 <h3 id="22-Dropout"><a href="#22-Dropout" class="headerlink" title="22.Dropout"></a>22.<strong>Dropout</strong></h3><p> – In the context of scRNA-seq, this refers to a stochastic failure to detect a transcript that is expressed in a cell. </p>
+<h3 id="23-Sample-Preparation-Protocols"><a href="#23-Sample-Preparation-Protocols" class="headerlink" title="23.Sample Preparation Protocols"></a>23.Sample Preparation Protocols</h3><p>Broadly speaking, a typical scRNA-seq protocol consists of the following steps (illustrated in the figure below):</p>
+<ul>
+<li>Tissue dissection and cell dissociating to obtain a suspension of cells.</li>
+<li>Optionally cells may be selected (e.g. based on membrane markers, fluorescent transgenes or staining dyes).</li>
+<li>Capture single cells into individual reaction containers (e.g. wells or oil droplets).</li>
+<li>Extracting the RNA from each cell.</li>
+<li>Reverse-transcribing the RNA to more stable cDNA.</li>
+<li>Amplifying the cDNA (either by <em>in vitro</em> transcription or by PCR).</li>
+<li>Preparing the sequencing library with adequate molecular adapters.</li>
+<li>Sequencing, usually with paired-end Illumina protocols.</li>
+<li>Processing the raw data to obtain a count matrix of genes-by-cells</li>
+<li>Carrying several downstream analysis (the focus of this course).</li>
+</ul>
+<h3 id="24-PCR"><a href="#24-PCR" class="headerlink" title="24.PCR"></a>24.<strong>PCR</strong></h3><p><strong>聚合酶链式反应</strong>（英语：Polymerase chain reaction，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B8%AE%E5%AF%AB">缩写</a>：<strong>PCR</strong>，又称多聚酶链式反应），是一项利用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/DNA%E5%A4%8D%E5%88%B6">DNA双链复制</a>的原理，在生物体外复制特定DNA片段的核酸合成技术。透过这项技术，可在短时间内大量扩增<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title=%E7%9B%AE%E7%9A%84%E5%9F%BA%E5%9B%A0&action=edit&redlink=1">目的基因</a>（标的基因）[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%81%9A%E5%90%88%E9%85%B6%E9%93%BE%E5%BC%8F%E5%8F%8D%E5%BA%94#cite_note-1">1]</a>[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%81%9A%E5%90%88%E9%85%B6%E9%93%BE%E5%BC%8F%E5%8F%8D%E5%BA%94#cite_note-2">2]</a>，而不必依赖<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%85%B8%E6%A1%BF%E8%8F%8C">大肠杆菌</a>或<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%85%B5%E6%AF%8D%E8%8F%8C">酵母菌</a>等生物体。DNA 体外扩增的实现首先基于DNA半保留复制原理，还有碱基互补配对原则，即复制的过程中双链DNA会解链，由双链变成单链，温度一般为95℃；之后温度降下来，引物会结合到DNA单链上，在DNA聚合酶的作用下，把游离的dNTP按照碱基互补配对原则结合到单链上，形成一条由旧链和新链杂合成的新的双链DNA。这个过程可概括为‘变性-退火-延伸’三个基本步骤。</p>
+<h3 id="25-内含子与外显子"><a href="#25-内含子与外显子" class="headerlink" title="25.内含子与外显子"></a>25.内含子与外显子</h3><p><strong>内含子</strong>（英语：Intron）是一个<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%9F%BA%E5%9B%A0">基因</a>中非编码<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/DNA">DNA</a>片段，它分开相邻的<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%A4%96%E6%98%BE%E5%AD%90">外显子</a>。更精确的定义是：<strong>内含子</strong>是阻断基因<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E7%B7%9A%E6%80%A7">线性</a>表达的序列。DNA上的内含子会被<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E8%BD%AC%E5%BD%95">转录</a>到<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%89%8D%E4%BF%A1%E4%BD%BF%E6%A0%B8%E7%B3%96%E6%A0%B8%E9%85%B8">前mRNA</a>中，但RNA上的内含子会在RNA离开<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E7%BB%86%E8%83%9E%E6%A0%B8">细胞核</a>进行<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E8%BD%AC%E8%AF%91">转译</a>前被<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/RNA%E5%89%AA%E6%8E%A5">剪除</a>。在成熟<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/MRNA">mRNA</a>被保留下来的基因部分被称为<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%A4%96%E6%98%BE%E5%AD%90">外显子</a>。<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E7%9C%9F%E6%A0%B8%E7%94%9F%E7%89%A9">真核生物</a>的基因含有外显子和内含子，是前者区别<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%8E%9F%E6%A0%B8%E7%94%9F%E7%89%A9">原核生物</a>的特征之一。</p>
+<p><img src="/../images/1920px-Pre-mRNA_to_mRNA.png" alt="前体RNA的剪接"></p>
+<h3 id="26-RNA的种类"><a href="#26-RNA的种类" class="headerlink" title="26.RNA的种类"></a>26.RNA的种类</h3><p><strong>mRNA</strong></p>
+<p>依据DNA序列转录而成的蛋白质合成模板</p>
+<p><strong>tRNA</strong></p>
+<p>mRNA上遗传密码的识别者和氨基酸的转运者</p>
+<p><strong>rRNA</strong></p>
+<p>组成核糖体（蛋白质合成的机械）的部分</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl2hnmlrh0003580ac64t09xp" data-title="日常积累" class="article-share-link">Teilen</a>
+      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl2pu5qry0003ki0a6yy66ce8" data-title="日常积累" class="article-share-link">Teilen</a>
       
       
       
@@ -214,7 +236,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" data-id="cl2hnmlrf0001580ac2lyd73p" data-title="关于配置hexo+github" class="article-share-link">Teilen</a>
+      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" data-id="cl2pu5qrx0001ki0agmvqb6eh" data-title="关于配置hexo+github" class="article-share-link">Teilen</a>
       
       
       

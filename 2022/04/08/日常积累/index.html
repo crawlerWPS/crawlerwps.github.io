@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://https/images/1210702-20170904231008522-198171358.png">
 <meta property="og:image" content="http://https/images/1920px-Pre-mRNA_to_mRNA.png">
 <meta property="article:published_time" content="2022-04-08T02:36:19.000Z">
-<meta property="article:modified_time" content="2022-05-03T11:28:47.500Z">
+<meta property="article:modified_time" content="2022-05-10T00:38:32.266Z">
 <meta property="article:author" content="crawler">
 <meta property="article:tag" content="生物信息">
 <meta name="twitter:card" content="summary">
@@ -116,6 +116,9 @@
 <p>桑格测序与NGS的主要差异在于测序量。桑格测序一次只能对一条DNA片段进行测序，而NGS可以进行大规模平行测序，每次运行可同时对数百万个片段进行测序。这意味着这样的高通量过程一次可对数百到数千个基因进行测序。NGS还具有更强的探索能力，可以通过深度测序检测新型或罕见变异。</p>
 <h3 id="7-human-cell-atlas-project-人类细胞图谱计划"><a href="#7-human-cell-atlas-project-人类细胞图谱计划" class="headerlink" title="7.human cell atlas project 人类细胞图谱计划"></a><strong>7.human cell atlas project 人类细胞图谱计划</strong></h3><p>这是一项大型国际合作项目：根据独特的分子信息（如基因表达）对所有人类细胞种类进行定义，并将这些信息与传统的细胞学表述（如位置和形态）相关联。</p>
 <h3 id="8-CPM"><a href="#8-CPM" class="headerlink" title="8.CPM"></a><strong>8.CPM</strong></h3><p>counts per million</p>
+<ul>
+<li><strong>cpm</strong>: Counts-per-million. This is the read count for each gene in each cell, divided by the library size of each cell in millions.</li>
+</ul>
 <p>不同样品的测序量有差异，最简单的标准化方式是计算counts per million <code>(CPM) = 原始reads count ÷ 总reads数 x 1,000,000</code>；</p>
 <p>这种计算方式，易受到极高表达且在不同样品中存在差异表达的基因的影响：这些基因的打开或关闭会影响到细胞中总的分子数目，可能导致这些基因标准化之后就不存在表达差异了，而原本没有差异的基因标准化之后却有差异了；</p>
 <p>RPKM、FPKM、TPM 是 CPM按照基因或转录本长度归一化后的表达，都会受到这一影响；</p>
@@ -134,7 +137,7 @@
 <h3 id="12-Poisson-distribution-泊松分布"><a href="#12-Poisson-distribution-泊松分布" class="headerlink" title="12.Poisson distribution 泊松分布"></a>12.Poisson distribution 泊松分布</h3><p>独立且同分布</p>
 <h3 id="13-RNA-spike-in"><a href="#13-RNA-spike-in" class="headerlink" title="13.RNA spike-in"></a>13.RNA spike-in</h3><p>An RNA spike-in is an RNA transcript of known sequence and quantity used to calibrate measurements in RNA hybridization assays, such as DNA microarray experiments, RT-qPCR, and RNA-Seq.</p>
 <p>A spike-in is designed to bind to a DNA molecule with a matching sequence, known as a control probe.This process of specific binding is called hybridization. A known quantity of RNA spike-in is mixed with the experiment sample during preparation.The degree of hybridization between the spike-ins and the control probes is used to normalize the hybridization measurements of the sample RNA.</p>
-<p>RNA的spike-in是一组序列已知的RNA转录本，目前普遍使用的是ERCC(<br>The External RNA Control Consortium)搞出来的一组RNA序列。当然，也可以使用序列相似度较低的物种的序列作为spike-in。如两种常见的酵母，S.pombe和S.cerevisiae，他们的序列可以作为彼此的spike-in进行后续矫正。</p>
+<p>RNA的spike-in是一组序列已知的RNA转录本，目前普遍使用的是ERCC(The External RNA Control Consortium)搞出来的一组RNA序列。当然，也可以使用序列相似度较低的物种的序列作为spike-in。如两种常见的酵母，S.pombe和S.cerevisiae，他们的序列可以作为彼此的spike-in进行后续矫正。</p>
 <p>通过在样品制备过程中，混入指定数量的spike-in，我们就可以知道不同样本中的基因绝对比表达值。如等细胞数的样本A和样本B，在每个样本中，我加入了等量的spike-in。最后分析发现，spike-in占样本A的1%，但是占样本B的5%。这表明样本A的RNA表达量也许普遍比样本B的表达量高五倍左右。</p>
 <p>下面是一个简单的草图，希望可以帮助理解，左边是细胞，右边是RNA</p>
 <p><img src="/../images/2.png" alt="img"></p>
@@ -175,6 +178,10 @@
 <p>S:science</p>
 <h3 id="19-GWAS"><a href="#19-GWAS" class="headerlink" title="19.GWAS"></a>19.GWAS</h3><p>全基因组关联研究（Genome-Wide Association Studies，<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/GWAS/7690175">GWAS</a>）是指在全基因组层面上，开展多中心、大样本、反复验证的基因与疾病的关联研究，是通过对大规模的群体DNA样本进行全基因组高密度<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%81%97%E4%BC%A0%E6%A0%87%E8%AE%B0/4095143">遗传标记</a>（如<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/SNP/9745593">SNP</a>或<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/CNV/2268396">CNV</a>等）分型，从而寻找与复杂疾病相关的遗传因素的研究方法，全面揭示疾病发生、发展与治疗相关的遗传基因。</p>
 <h3 id="20-CPM"><a href="#20-CPM" class="headerlink" title="20.CPM"></a>20.<strong>CPM</strong></h3><p>– Counts per million. </p>
+<p>原始的表达量除以该样本表达量的总和，在乘以一百万就得到了<code>CPM</code>值 。从公式可以看出， <code>CPM</code>其实就是相对丰度，只不过考虑到测序的reads总量很多，所以总的reads数目以百万为单位。</p>
+<p>假定原始的表达量<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E7%9F%A9%E9%98%B5&spm=1001.2101.3001.7020">矩阵</a>为<code>count</code>, 计算<code>CPM</code>的代码如下</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cpm <span class="operator">&lt;-</span> apply<span class="punctuation">(</span>count <span class="punctuation">,</span><span class="number">2</span><span class="punctuation">,</span> <span class="keyword">function</span><span class="punctuation">(</span>x<span class="punctuation">)</span> <span class="punctuation">&#123;</span> x<span class="operator">/</span><span class="built_in">sum</span><span class="punctuation">(</span>x<span class="punctuation">)</span><span class="operator">*</span><span class="number">1000000</span> <span class="punctuation">&#125;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="21-UMI"><a href="#21-UMI" class="headerlink" title="21.UMI"></a>21.<strong>UMI</strong></h3><p>– Unique molecular identifier. A randomized nucleotide sequence incorporated into the complementary DNA in the initial steps of RNA-seq protocol. Because this sequence is then carried in the subsequent amplification steps, it can be used to recognize multiple sequencing reads originating from the same physical mRNA transcript. </p>
 <p>The usage of <strong>UMIs</strong> is recommended primarily for three scenarios: <strong>very low input samples, very deep sequencing of RNA-seq libraries (&gt; 80 million reads per sample), and the detection of ultra-low frequency mutations in DNA sequencing</strong>. For many other types of projects, UMIs will yield minor increases in the accuracy of the data. In addition, UMI analysis is an excellent QC tool of library complexity.</p>
 <h3 id="22-Dropout"><a href="#22-Dropout" class="headerlink" title="22.Dropout"></a>22.<strong>Dropout</strong></h3><p> – In the context of scRNA-seq, this refers to a stochastic failure to detect a transcript that is expressed in a cell. </p>
@@ -200,11 +207,85 @@
 <p>mRNA上遗传密码的识别者和氨基酸的转运者</p>
 <p><strong>rRNA</strong></p>
 <p>组成核糖体（蛋白质合成的机械）的部分</p>
+<h3 id="27-stem-cell"><a href="#27-stem-cell" class="headerlink" title="27.stem cell"></a>27.stem cell</h3><p><strong>干细胞</strong>（英语：stem cell）是原始且未特化的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BB%86%E8%83%9E">细胞</a>，它是未充分分化、具有再生各种组织器官的潜在功能的一类细胞。干细胞存在所有多细胞<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B5%84%E7%B9%94_(%E7%94%9F%E7%89%A9%E5%AD%B8)">组织</a>里，能经由<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9C%89%E7%B5%B2%E5%88%86%E8%A3%82">有丝分裂</a>与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%88%86%E5%8C%96">分化</a>来<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BB%86%E8%83%9E%E5%88%86%E8%A3%82">分裂</a>成多种的特化细胞，而且可以利用自我更新来提供更多干细胞。对哺乳动物来说，干细胞分为两大类：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%83%9A%E8%83%8E%E5%B9%B9%E7%B4%B0%E8%83%9E">胚胎干细胞</a>与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%88%90%E4%BD%93%E5%B9%B2%E7%BB%86%E8%83%9E">成体干细胞</a>，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%83%9A%E8%83%8E%E5%B9%B9%E7%B4%B0%E8%83%9E">胚胎干细胞</a>取自<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9B%8A%E8%83%9A">囊胚</a>里的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%85%A7%E7%B4%B0%E8%83%9E%E5%9C%98">内细胞团</a>；而<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%88%90%E4%BD%93%E5%B9%B2%E7%BB%86%E8%83%9E">成体干细胞</a>则来自各式各样的组织。在成体组织里，间叶干细胞与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%89%8D%E4%BD%93%E7%BB%86%E8%83%9E">前体细胞</a>担任身体的修复系统，补充成体组织。在胚胎发展阶段，干细胞不仅能分化为所有的特化细胞- 外胚层，内胚层和中胚层(参考<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E5%A4%9A%E8%83%BD%E5%B9%B2%E7%BB%86%E8%83%9E">人工多能干细胞</a>)，而且能维持新生组织的正常转移，例如血液、皮肤或肠组织。</p>
+<h3 id="28-四分位距（interquartile-range，IQR）"><a href="#28-四分位距（interquartile-range，IQR）" class="headerlink" title="28.四分位距（interquartile range，IQR）"></a>28.四分位距（interquartile range，IQR）</h3><p>四分位距，又称四分差。是描述统计学中的一种方法，以确定第三四分位数和第一四分位数的区别。与方差、标准差一样，表示统计资料中各变量分散情形，但是四分差更多为一种稳健统计（robust statistics）</p>
+<p>Def:</p>
+<p>四分位距通常是用来构建箱型图，以及对概率分布的简要图表概述。对一个对称性分布数据（其中位数必然位于第三四分位数与第一四分位数的算数平均数），二分之一的四分差等于绝对中位差（MAD)。中位数是集中趋势的反映。</p>
+<p>公式：$IQR &#x3D; Q3 - Q1$</p>
+<h4 id="举个例子：图表中数据"><a href="#举个例子：图表中数据" class="headerlink" title="举个例子：图表中数据"></a>举个例子：图表中数据</h4><table>
+<thead>
+<tr>
+<th>数列</th>
+<th>参数</th>
+<th>四分差</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>102</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>104</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>105</td>
+<td>Q1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>107</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>108</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>109</td>
+<td>Q2 (中位数)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>110</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>112</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>115</td>
+<td>Q3</td>
+</tr>
+<tr>
+<td>10</td>
+<td>118</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>118</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>从这个表格中，我们可以算出四分差的距离为 115− 105 &#x3D; 10。</p>
+<h3 id="29-ERCC"><a href="#29-ERCC" class="headerlink" title="29.ERCC"></a>29.ERCC</h3><p>External RNA Control Consortium (ERCC)</p>
+<p>目前常用的ERCC版本内包含了176条RNA序列，这些RNA序列是从一些物种的DNA转录得到的，编号从ERCC-00001到ERCC-00176，所有对应的编号的序列全部可以从网上直接搜索下载。</p>
+<p>目前，已经有非常成熟的商业化的ERCC序列，其中的176条RNA组成的一个库（pool）也是经过特殊设计的。不是简单的等量混合，而是不同的pool会对176条序列分成很多小库（subpool），然后通过不同的比例对这些subpool进行混合，然后形成不同的配比比例。在购买商业化的ERCC序列时，一定要注意下载对应版本的绝对定量信息。当然，有些商业化的ERCC里面也不是包含全部176条标准序列。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/52063724">https://zhuanlan.zhihu.com/p/52063724</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl2q2in5i0003au0a92pc0r03" data-title="日常积累" class="article-share-link">Teilen</a>
+      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl2zfedeu00097e0a0opp3yk6" data-title="日常积累" class="article-share-link">Teilen</a>
       
       
       

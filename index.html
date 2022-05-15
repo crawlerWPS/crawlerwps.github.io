@@ -1,519 +1,233 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn" class="loading">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>crawler的小屋</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="crawler的小屋">
-<meta property="og:url" content="http://https//crawlerwps.github.io/index.html">
-<meta property="og:site_name" content="crawler的小屋">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="crawler">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="crawler的小屋" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>crawler的小屋</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
+    <meta name="author" content="crawler"> 
+    <link rel="alternative" href="atom.xml" title="crawler的小屋" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="crawler的小屋"/>
+    
+    
+    
+    
+    
+    <meta property="og:site_name" content="crawler的小屋"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="crawler的小屋"/>
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
 
-  
+    <script>window.searchDbPath = "/search.xml";</script>
 <meta name="generator" content="Hexo 6.1.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">crawler的小屋</a>
-      </h1>
-      
+<body class="loading">
+    <span id="config-title" style="display:none">crawler的小屋</span>
+    <div id="loader"></div>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="//" title="首页" target="_blank" rel="noopener">首页</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="分类" target="_blank" rel="noopener">分类</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="标签" target="_blank" rel="noopener">标签</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="归档" target="_blank" rel="noopener">归档</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/about/" title="关于" target="_blank" rel="noopener">关于</a>
+        </li>
+        
+    </ul>
+	<span class="target"></span>
+	<center>
+	<div class="hitokoto">
+		<span class="typed" id="hitokoto" data-st="true"></span>
+	</div>
+	</center>
+	
+	<p class="footerlinks">
+		<a href="#" class="iconfont icon-null"></a>
+		
+            <a href="/" title="facebook" class="iconfont icon-facebook" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="twitter" class="iconfont icon-twitter" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
+        
+            <a href="/img/logo.png" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
+        
+            <a href="mailto:xxxx@gmail.com" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
+        
+		<a href="#" class="iconfont icon-null"></a>
+	</p>
+	
+    <p id="copyright">
+        &copy; 2022 crawler.
+        <span> | </span>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        <span> | </span>Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a> by Fechin
+		
+		<span> | </span><a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备xxxxxxx号</a>
+		
+    </p>
+</div>
+
+<div id="container">
+    
+<div id="screen">
+    <div id="mark">
+        <div class="layer" data-depth="0.4">
+            <img src="/img/welcome-cover.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://https://crawlerwps.github.io"></form>
-      </div>
+    <div id="vibrant">
+        <svg viewbox="0 0 2880 1620" height="100%" preserveaspectratio="xMaxYMax slice">
+            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
+        </svg>
+        <div></div>
     </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-linux" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/05/11/linux/" class="article-date">
-  <time class="dt-published" datetime="2022-05-11T02:56:46.000Z" itemprop="datePublished">2022-05-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%A7%AF%E6%B0%B4%E6%88%90%E6%B8%8A/">小知识积水成渊</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/05/11/linux/">linux</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">介绍下Shell中的<span class="variable">$&#123;&#125;</span>、<span class="comment">##和%%使用范例，本文给出了不同情况下得到的结果。</span></span><br><span class="line">假设定义了一个变量为：</span><br><span class="line">代码如下:</span><br><span class="line">file=/dir1/dir2/dir3/my.file.txt</span><br><span class="line">可以用<span class="variable">$&#123; &#125;</span>分别替换得到不同的值：</span><br><span class="line"><span class="variable">$&#123;file#*/&#125;</span>：删掉第一个 / 及其左边的字符串：dir1/dir2/dir3/my.file.txt</span><br><span class="line"><span class="variable">$&#123;file##*/&#125;</span>：删掉最后一个 /  及其左边的字符串：my.file.txt</span><br><span class="line"><span class="variable">$&#123;file#*.&#125;</span>：删掉第一个 .  及其左边的字符串：file.txt</span><br><span class="line"><span class="variable">$&#123;file##*.&#125;</span>：删掉最后一个 .  及其左边的字符串：txt</span><br><span class="line"><span class="variable">$&#123;file%/*&#125;</span>：删掉最后一个  /  及其右边的字符串：/dir1/dir2/dir3</span><br><span class="line"><span class="variable">$&#123;file%%/*&#125;</span>：删掉第一个 /  及其右边的字符串：(空值)</span><br><span class="line"><span class="variable">$&#123;file%.*&#125;</span>：删掉最后一个  .  及其右边的字符串：/dir1/dir2/dir3/my.file</span><br><span class="line"><span class="variable">$&#123;file%%.*&#125;</span>：删掉第一个  .   及其右边的字符串：/dir1/dir2/dir3/my</span><br><span class="line">记忆的方法为：</span><br><span class="line"><span class="comment"># 是 去掉左边（键盘上#在 $ 的左边）</span></span><br><span class="line">%是去掉右边（键盘上% 在$ 的右边）</span><br><span class="line">单一符号是最小匹配；两个符号是最大匹配</span><br><span class="line"><span class="variable">$&#123;file:0:5&#125;</span>：提取最左边的 5 个字节：/dir1</span><br><span class="line"><span class="variable">$&#123;file:5:5&#125;</span>：提取第 5 个字节右边的连续5个字节：/dir2</span><br><span class="line">也可以对变量值里的字符串作替换：</span><br><span class="line"><span class="variable">$&#123;file/dir/path&#125;</span>：将第一个<span class="built_in">dir</span> 替换为path：/path1/dir2/dir3/my.file.txt</span><br><span class="line"><span class="variable">$&#123;file//dir/path&#125;</span>：将全部<span class="built_in">dir</span> 替换为 path：/path1/path2/path3/my.file.txt</span><br></pre></td></tr></table></figure>
-
-      
+    <div id="header">
+        <div>
+            <a class="image-logo" href="/"></a>
+			
+            <div class="iconfont icon-menu switchmenu"></div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/05/11/linux/" data-id="cl36zzdgw00011w0a38v54hed" data-title="linux" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux-%E5%B0%8F%E6%8A%80%E5%B7%A7/" rel="tag">linux 小技巧</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-日常积累" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" class="article-date">
-  <time class="dt-published" datetime="2022-04-08T02:36:19.000Z" itemprop="datePublished">2022-04-08</time>
-</a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%A7%AF%E6%B0%B4%E6%88%90%E6%B8%8A/">小知识积水成渊</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/">日常积累</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>[TOC]</p>
-<hr>
-<h3 id="1-omics-组学"><a href="#1-omics-组学" class="headerlink" title="1.omics 组学"></a><strong>1.omics 组学</strong></h3><p><strong>组学</strong>（英语：omics）通常指<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%94%9F%E7%89%A9%E5%AD%A6">生物学</a>中对各类研究对象（一般为<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%94%9F%E7%89%A9%E5%88%86%E5%AD%90">生物分子</a>）的集合所进行的系统性研究，例如，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6">基因组学</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%BB%84%E5%AD%A6">蛋白质组学</a>，和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BB%A3%E8%B0%A2%E7%89%A9%E7%BB%84%E5%AD%A6">代谢物组学</a>等，而这些研究对象的集合被称为<strong>组</strong>。在英文中，“组”以**-ome<strong>作为<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%90%8E%E7%BC%80">后缀</a>，而“组学”以</strong>-omics**作为后缀。例如，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6">基因组学</a>（genomics）是系统性研究生物体<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84">基因组</a>（genome）中各种<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9F%BA%E5%9B%A0">基因</a>（gene）以及它们之间的相互关系的学科。</p>
-<h3 id="2-transcriptome转录组"><a href="#2-transcriptome转录组" class="headerlink" title="2.transcriptome转录组"></a><strong>2.transcriptome转录组</strong></h3><p><strong>转录组</strong>(英语：Transcriptome)，也称为“<strong>转录物组</strong>”，广义上指在相同<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%8E%AF%E5%A2%83">环境</a>（或生理条件）下的在<strong>一个<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BB%86%E8%83%9E">细胞</a>、或一群细胞中所能<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BD%AC%E5%BD%95">转录</a>出的所有<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/RNA">RNA</a>的总和</strong>，包括<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BF%A1%E4%BD%BFRNA">信使RNA</a>（mRNA）、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A0%B8%E7%B3%96%E9%AB%94RNA">核糖体RNA</a>（rRNA）、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BD%89%E9%81%8BRNA">转运RNA</a>（tRNA）及<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%9D%9E%E7%BC%96%E7%A0%81RNA">非编码RNA</a>；狭义上则指细胞所能<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BD%AC%E5%BD%95">转录</a>出的所有<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BF%A1%E4%BD%BFRNA">信使RNA</a>（mRNA）。</p>
-<h3 id="3-biological-interpretation生物学解释"><a href="#3-biological-interpretation生物学解释" class="headerlink" title="3.biological interpretation生物学解释"></a><strong>3.biological interpretation生物学解释</strong></h3><h3 id="4-proteome蛋白质组"><a href="#4-proteome蛋白质组" class="headerlink" title="4.proteome蛋白质组"></a><strong>4.proteome蛋白质组</strong></h3><p><strong>蛋白质组</strong>（也称<strong>蛋白质体，</strong>proteome），是在特定时间内，是一个由<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9F%BA%E5%9B%A0%E7%B5%84">基因组</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B4%B0%E8%83%9E">细胞</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B5%84%E7%B9%94">组织</a>、或<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%94%9F%E7%89%A9%E9%AB%94">生物体</a>表达的或可以表达的整套<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%9B%8B%E7%99%BD%E8%B3%AA">蛋白质</a>。 它是在给定时间，在给定条件下在给定类型的细胞或生物中表达的蛋白质的集合。 研究蛋白质组的学科就是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%9B%8B%E7%99%BD%E8%B3%AA%E7%B5%84%E5%AD%B8">蛋白质组学</a>。</p>
-<h3 id="5-cell-membrane细胞膜"><a href="#5-cell-membrane细胞膜" class="headerlink" title="5.cell membrane细胞膜"></a><strong>5.cell membrane细胞膜</strong></h3><p><strong>细胞膜</strong>，又称<strong>原生质膜</strong>或<strong>质膜</strong>（英语：<strong>cell membrane</strong> 或 <strong>plasma membrane</strong> 或 <strong>cytoplasmic membrane</strong>），为<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BB%86%E8%83%9E">细胞</a>结构中分隔细胞内、外不同介质和组成成分的界面。原生质膜普遍认为由<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%A3%B7%E8%84%82">磷脂</a>质双层分子作为基本单位重复而成，即<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%A3%B7%E8%84%82%E5%8F%8C%E5%88%86%E5%AD%90%E5%B1%82">磷脂双分子层</a>，其上镶嵌有各种类型的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%86%9C%E8%9B%8B%E7%99%BD">膜蛋白</a>以及与膜蛋白结合的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B3%96%E7%B1%BB">糖</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B3%96%E8%84%82">糖脂</a>。</p>
-<h3 id="6-next-generation-sequencing-technology下一代测序NGS"><a href="#6-next-generation-sequencing-technology下一代测序NGS" class="headerlink" title="6.next-generation sequencing technology下一代测序NGS"></a><strong>6.next-generation sequencing technology下一代测序</strong>NGS</h3><p>从原理上说，桑格测序与新一代测序（NGS）技术背后的概念是相似的。在NGS和桑格测序（也称为双脱氧测序或毛细管电泳测序）的过程中，DNA聚合酶会将有荧光的核苷酸逐个添加到正在延长的DNA模板链上。通过荧光标记识别每个掺入的核苷酸。</p>
-<p>桑格测序与NGS的主要差异在于测序量。桑格测序一次只能对一条DNA片段进行测序，而NGS可以进行大规模平行测序，每次运行可同时对数百万个片段进行测序。这意味着这样的高通量过程一次可对数百到数千个基因进行测序。NGS还具有更强的探索能力，可以通过深度测序检测新型或罕见变异。</p>
-<h3 id="7-human-cell-atlas-project-人类细胞图谱计划"><a href="#7-human-cell-atlas-project-人类细胞图谱计划" class="headerlink" title="7.human cell atlas project 人类细胞图谱计划"></a><strong>7.human cell atlas project 人类细胞图谱计划</strong></h3><p>这是一项大型国际合作项目：根据独特的分子信息（如基因表达）对所有人类细胞种类进行定义，并将这些信息与传统的细胞学表述（如位置和形态）相关联。</p>
-<h3 id="8-CPM"><a href="#8-CPM" class="headerlink" title="8.CPM"></a><strong>8.CPM</strong></h3><p>counts per million</p>
-<ul>
-<li><strong>cpm</strong>: Counts-per-million. This is the read count for each gene in each cell, divided by the library size of each cell in millions.</li>
-</ul>
-<p>不同样品的测序量有差异，最简单的标准化方式是计算counts per million <code>(CPM) = 原始reads count ÷ 总reads数 x 1,000,000</code>；</p>
-<p>这种计算方式，易受到极高表达且在不同样品中存在差异表达的基因的影响：这些基因的打开或关闭会影响到细胞中总的分子数目，可能导致这些基因标准化之后就不存在表达差异了，而原本没有差异的基因标准化之后却有差异了；</p>
-<p>RPKM、FPKM、TPM 是 CPM按照基因或转录本长度归一化后的表达，都会受到这一影响；</p>
-<h3 id="9-CV"><a href="#9-CV" class="headerlink" title="9.CV"></a><strong>9.CV</strong></h3><p>CV² &#x3D; <em>a</em>1&#x2F;μ + α0</p>
-<p>Coefficient of variation</p>
-<p>变异的系数</p>
-<p>CV &#x3D;  （标准偏差 SD &#x2F; 平均值Mean ）x 100%</p>
-<p>The coefficient of variation (CV) is a statistical measure of the dispersion of data points in a data series around the mean. The coefficient of variation represents the ratio of the <strong>standard deviation</strong> to the <strong>mean</strong>（标准差&#x2F;平均值，表示概率分布的离散程度）, and it is a useful statistic for comparing the degree of variation from one data series to another, even if the means are drastically different from one another.</p>
-<p>The coefficient of variation shows the extent of <a target="_blank" rel="noopener" href="https://www.investopedia.com/terms/v/variability.asp">variability</a> of data in a sample in relation to the mean of the population.</p>
-<p>举个小例子：</p>
-<p><img src="/../images/image-20220317201110705.png" alt="image-20220317201110705"></p>
-<h3 id="10-PC"><a href="#10-PC" class="headerlink" title="10.PC"></a><strong>10.PC</strong></h3><p>principle component</p>
-<h3 id="11-RLE"><a href="#11-RLE" class="headerlink" title="11.RLE"></a><strong>11.RLE</strong></h3><p>relative log expression</p>
-<p>量化因子 (size factor,SF)，首先计算每个基因在所有样品中表达的几何平均值；每个细胞的SF是所有基因与其在所有样品中的表达值的几何平均值的比值的中位数；由于几何平均值的使用，只有在所有样品中表达都不为0的基因才能用来计算。这一方法又被称为RLE(relative log expression)。</p>
-<p><img src="/../images/image-20220317174436841.png" alt="image-20220317174436841"></p>
-<h3 id="12-Poisson-distribution-泊松分布"><a href="#12-Poisson-distribution-泊松分布" class="headerlink" title="12.Poisson distribution 泊松分布"></a><strong>12.Poisson distribution 泊松分布</strong></h3><p>独立且同分布</p>
-<h3 id="13-RNA-spike-in"><a href="#13-RNA-spike-in" class="headerlink" title="13.RNA spike-in"></a><strong>13.RNA spike-in</strong></h3><p>An RNA spike-in is an RNA transcript of known sequence and quantity used to calibrate measurements in RNA hybridization assays, such as DNA microarray experiments, RT-qPCR, and RNA-Seq.</p>
-<p>A spike-in is designed to bind to a DNA molecule with a matching sequence, known as a control probe.This process of specific binding is called hybridization. A known quantity of RNA spike-in is mixed with the experiment sample during preparation.The degree of hybridization between the spike-ins and the control probes is used to normalize the hybridization measurements of the sample RNA.</p>
-<p>RNA的spike-in是一组序列已知的RNA转录本，目前普遍使用的是ERCC(The External RNA Control Consortium)搞出来的一组RNA序列。当然，也可以使用序列相似度较低的物种的序列作为spike-in。如两种常见的酵母，S.pombe和S.cerevisiae，他们的序列可以作为彼此的spike-in进行后续矫正。</p>
-<p>通过在样品制备过程中，混入指定数量的spike-in，我们就可以知道不同样本中的基因绝对比表达值。如等细胞数的样本A和样本B，在每个样本中，我加入了等量的spike-in。最后分析发现，spike-in占样本A的1%，但是占样本B的5%。这表明样本A的RNA表达量也许普遍比样本B的表达量高五倍左右。</p>
-<p>下面是一个简单的草图，希望可以帮助理解，左边是细胞，右边是RNA</p>
-<p><img src="/../images/2.png" alt="img"></p>
-<h3 id="14-read-counts"><a href="#14-read-counts" class="headerlink" title="14.read counts"></a>14.read counts</h3><p><strong>(1)数值概念：</strong>比对到gene A的reads数。<br><strong>(2)用途：</strong>用于换算CPM、RPKM等后续其他指标；作为基因表达差异分析的输入数值。<br>大部分<strong>差异分析软件（如DESeq和edgeR）</strong>，用原始的可比对的reads count作为输入，并用<strong>负二项分布模型估算样本间基因差异表达的概率</strong>。</p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0f5a9616efe2">https://www.jianshu.com/p/0f5a9616efe2</a></p>
-<p>原始测序数据经过处理得到分子计数矩阵（count matrix），或者reads count （读数矩阵）。这取决于单细胞文库构建方案中是否包含唯一分子标识符（UMI， unique molecular identifiers）（参考下面的Box1. Hemberg-lab单细胞转录组数据分析（六）- 构建表达矩阵，UMI介绍）。原始数据处理流程如Cell Ranger, indrops, SEQC, zUMIs负责测序数据质控，确定reads来源的细胞 (barcodes) （这一步也称为demultiplexing）和mRNA分子 （生信宝典注：单细胞测序不只获得mRNA，更准确说是带poly-A尾巴的RNA，包括mRNA和lncRNA等）、基因组比对和定量。获得的reads或count矩阵的行数等于barcodes的数目，列数等于基因数目（生信宝典注：也可能反过来，行为基因，列为barcodes）。<strong>这里使用术语barcodes而不是cell，因为分配给相同barcode的所有reads可能并不只是来源于同一细胞。barcode可能会错误地标记多个细胞（doublet），也可能不会标记任何细胞（空液滴&#x2F;孔） 。</strong> </p>
-<p>尽管reads data和 count data 的测量噪声级别不同 （生信宝典注：基于UMI的数据，获得的是分子计数，count data，噪声更低），但在分析流程中的处理步骤是相同的。为简单起见，在本教程中，我们将数据称为计数矩阵（count data）。在reads和计数矩阵的结果不同的地方，将会特别提到reads矩阵。</p>
-<h3 id="15-构建文库"><a href="#15-构建文库" class="headerlink" title="15.构建文库"></a>15.构建文库</h3><p>该<strong>构建方法</strong>包括以下步骤：对<strong>单细胞</strong>中的RNA进行反转录得到cDNA；用扩增引物对cDNA进行预扩增，得到扩增cDNA；对扩增cDNA进行片段化<strong>文库构建</strong>，得到<strong>单细胞</strong>的转录组测序<strong>文库</strong>；其中，扩增引物中的dTTP替换为dUTP。</p>
-<h4 id="15-1-基因文库library"><a href="#15-1-基因文库library" class="headerlink" title="15.1 基因文库library"></a>15.1 基因文库library</h4><p><strong>在<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6">分子生物学</a>中, 一个基因文库是通过<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%88%86%E5%AD%90%E5%85%8B%E9%9A%86">分子克隆</a>的方法存储和繁殖微生物群的DNA片段的集合。</strong> 基因文库有很多种，包括<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/CDNA%E6%96%87%E5%BA%AB">部分基因文库</a>（cDNA文库）、<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/w/index.php?title=%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%96%87%E5%BA%93&action=edit&redlink=1">基因组文库</a>（由基因组DNA形成），以及随机突变体库（由被替代的核苷酸或密码子结合形成的新的基因合成）。基因文库是当前分子生物学的一个主要研究方向 ，这些文库的用途取决于原始DNA片段的来源。用于文库制备的克隆载体和技术存在差异，但通常每个DNA片段都被独立地插入一个克隆载体，然后将重组DNA分子转化入受体菌群（<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E7%B4%B0%E8%8F%8C%E4%BA%BA%E5%B7%A5%E6%9F%93%E8%89%B2%E9%AB%94">细菌人工染色体</a>，BAC文库）或酵母内，使得每个生物体平均含有一个构建的表达载体（载体+插入物）。随着培养的种群的数量增长，其中包含的DNA也在被不断复制。</p>
-<h3 id="16-cDNA"><a href="#16-cDNA" class="headerlink" title="16.cDNA"></a>16.cDNA</h3><p><strong>Complementary DNA</strong> (cDNA) is a DNA copy of a messenger RNA (mRNA) molecule produced by reverse transcriptase, a DNA polymerase that can use either DNA or RNA as a template.</p>
-<h4 id="16-1-cDNA文库的制备"><a href="#16-1-cDNA文库的制备" class="headerlink" title="16.1 cDNA文库的制备"></a>16.1 cDNA文库的制备</h4><ul>
-<li>载体DNA片段的制备</li>
-<li>多聚RNA的分离与纯化</li>
-<li>双链cDNA的合成<ul>
-<li>第一条cDNA链：<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E9%80%86%E8%BD%AC%E5%BD%95">逆转录法</a></li>
-<li>第二条cDNA链：碱解或酶解法除去RNA分子</li>
-</ul>
-</li>
-<li>cDNA与载体DNA相连</li>
-<li>重组cDNA分子的转移[<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-hans/%E5%9F%BA%E5%9B%A0%E6%96%87%E5%BA%93#cite_note-biopkueducn-1">1]</a></li>
-</ul>
-<h3 id="17-NGS数据格式介绍"><a href="#17-NGS数据格式介绍" class="headerlink" title="17.NGS数据格式介绍"></a>17.<a target="_blank" rel="noopener" href="https://www.cnblogs.com/freescience/p/7476398.html">NGS数据格式介绍</a></h3><p>一般情况下，从Illumina平台上得到的测序，其数据格式是Fastq格式，可以称之为原始数据（Raw data）。事实上直接的下机数据是显微拍摄得到的图像信息。但是一般都会用Bcl2Fastq软件将图像信息转化成Fastq文件。</p>
-<p>如果测序是SE：则只有一个fastq文件，如果是PE测序，则得到两个Fastq文件。</p>
-<p>PE的数据特点有：</p>
-<p>（1）两个Fastq文件中分别包含数据1和2，来区分前后端；</p>
-<p>（2）这2个文件的行数必须一致；</p>
-<p>（3）相同的行上的数据来自同一条DNA片段双末端的测序数据；</p>
-<p>（4）Fastq以每4行为一个单位，表示一条reads的信息。</p>
-<blockquote>
-<p>@HISEQ:6:1101:1703:2071#GCAATGGC&#x2F;1</p>
-<p>AGAATGCGTCATTCTGCGGAACTCATCCGACTGAATACCGAAAAGCAGAATCTGATCCTGGTTTCT</p>
-<p>GCCATAAAGTAGCGCGAGCACACAGACGTCTGCGCGCCTGCGGTGACGGCGGTGCGGGT</p>
-<ul>
-<li></li>
-</ul>
-<p>&#96;`&#96;&#96;fdbeaeddf]d_ffNddPP\dedd]N[XPdffP\NeNdbff]faeafPdeff]PbPPP[efP^YePY\edfefO[</p>
-<p>NNNbcM_effc\OcfcOWbffffMXcaMcffa_cYcYYbccYM]b</p>
-</blockquote>
-<p>第一行 序列名称</p>
-<p>第二行 序列的碱基组成</p>
-<p>第三行 序列信息，或者直接以“+”做标记</p>
-<p>第四行 碱基的质量</p>
-<p><img src="/../images/1210702-20170904230759163-1861965471.png" alt="img"></p>
-<p>现在的Illimina使用的质量格式为Phred+33，和Sanger的碱基质量基本一致；碱基质量使用Q（Phred值）表示，其计算公式为：</p>
-<p><img src="/../images/1210702-20170904230915491-1467284346.png" alt="img"></p>
-<p>碱基质量与错误率的关系为：</p>
-<p> <img src="/../images/1210702-20170904231008522-198171358.png" alt="img"></p>
-<h3 id="18-CNS期刊"><a href="#18-CNS期刊" class="headerlink" title="18.CNS期刊"></a>18.CNS期刊</h3><p>C:cell</p>
-<p>N:nature</p>
-<p>S:science</p>
-<h3 id="19-GWAS"><a href="#19-GWAS" class="headerlink" title="19.GWAS"></a>19.GWAS</h3><p>全基因组关联研究（Genome-Wide Association Studies，<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/GWAS/7690175">GWAS</a>）是指在全基因组层面上，开展多中心、大样本、反复验证的基因与疾病的关联研究，是通过对大规模的群体DNA样本进行全基因组高密度<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%81%97%E4%BC%A0%E6%A0%87%E8%AE%B0/4095143">遗传标记</a>（如<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/SNP/9745593">SNP</a>或<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/CNV/2268396">CNV</a>等）分型，从而寻找与复杂疾病相关的遗传因素的研究方法，全面揭示疾病发生、发展与治疗相关的遗传基因。</p>
-<h3 id="20-CPM"><a href="#20-CPM" class="headerlink" title="20.CPM"></a>20.<strong>CPM</strong></h3><p>– Counts per million. </p>
-<p>原始的表达量除以该样本表达量的总和，在乘以一百万就得到了<code>CPM</code>值 。从公式可以看出， <code>CPM</code>其实就是相对丰度，只不过考虑到测序的reads总量很多，所以总的reads数目以百万为单位。</p>
-<p>假定原始的表达量<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E7%9F%A9%E9%98%B5&spm=1001.2101.3001.7020">矩阵</a>为<code>count</code>, 计算<code>CPM</code>的代码如下</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cpm <span class="operator">&lt;-</span> apply<span class="punctuation">(</span>count <span class="punctuation">,</span><span class="number">2</span><span class="punctuation">,</span> <span class="keyword">function</span><span class="punctuation">(</span>x<span class="punctuation">)</span> <span class="punctuation">&#123;</span> x<span class="operator">/</span><span class="built_in">sum</span><span class="punctuation">(</span>x<span class="punctuation">)</span><span class="operator">*</span><span class="number">1000000</span> <span class="punctuation">&#125;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="21-UMI"><a href="#21-UMI" class="headerlink" title="21.UMI"></a>21.<strong>UMI</strong></h3><p>– Unique molecular identifier. A randomized nucleotide sequence incorporated into the complementary DNA in the initial steps of RNA-seq protocol. Because this sequence is then carried in the subsequent amplification steps, it can be used to recognize multiple sequencing reads originating from the same physical mRNA transcript. </p>
-<p>The usage of <strong>UMIs</strong> is recommended primarily for three scenarios: <strong>very low input samples, very deep sequencing of RNA-seq libraries (&gt; 80 million reads per sample), and the detection of ultra-low frequency mutations in DNA sequencing</strong>. For many other types of projects, UMIs will yield minor increases in the accuracy of the data. In addition, UMI analysis is an excellent QC tool of library complexity.</p>
-<ul>
-<li>UMI序列，即unique molecular index，它是一段随机序列，也就是说每个DNA分子都有自己的UMI序列，UMI长为10bp，那么就有<code>4^10=1,048,576</code>也就是100多万种变化。它的作用就是经过了PCR+深度测序后，找到reads与原始cDNA的对应关系 &#x3D;》 每个DNA标签分子的ID号</li>
-</ul>
-<blockquote>
-<p>它考虑到了这样一种情况：一个基因片段经过PCR扩增产生多个reads，但是不加标记我们是不知道的，并且不同基因的PCR扩增效率可能不同，因此一个基因最后得到的reads数就可能由于PCR扩增效率高而超过了另一个基因(而这两个基因的真实表达量可能差不多)。也就是排除”PCR bias”</p>
-</blockquote>
-<h3 id="22-Dropout"><a href="#22-Dropout" class="headerlink" title="22.Dropout"></a>22.<strong>Dropout</strong></h3><p> – In the context of scRNA-seq, this refers to a stochastic failure to detect a transcript that is expressed in a cell. </p>
-<h3 id="23-Sample-Preparation-Protocols"><a href="#23-Sample-Preparation-Protocols" class="headerlink" title="23.Sample Preparation Protocols"></a>23.Sample Preparation Protocols</h3><p>Broadly speaking, a typical scRNA-seq protocol consists of the following steps (illustrated in the figure below):</p>
-<ul>
-<li>Tissue dissection and cell dissociating to obtain a suspension of cells.</li>
-<li>Optionally cells may be selected (e.g. based on membrane markers, fluorescent transgenes or staining dyes).</li>
-<li>Capture single cells into individual reaction containers (e.g. wells or oil droplets).</li>
-<li>Extracting the RNA from each cell.</li>
-<li>Reverse-transcribing the RNA to more stable cDNA.</li>
-<li>Amplifying the cDNA (either by <em>in vitro</em> transcription or by PCR).</li>
-<li>Preparing the sequencing library with adequate molecular adapters.</li>
-<li>Sequencing, usually with paired-end Illumina protocols.</li>
-<li>Processing the raw data to obtain a count matrix of genes-by-cells</li>
-<li>Carrying several downstream analysis (the focus of this course).</li>
-</ul>
-<h3 id="24-PCR"><a href="#24-PCR" class="headerlink" title="24.PCR"></a>24.<strong>PCR</strong></h3><p><strong>聚合酶链式反应</strong>（英语：Polymerase chain reaction，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B8%AE%E5%AF%AB">缩写</a>：<strong>PCR</strong>，又称多聚酶链式反应），是一项利用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/DNA%E5%A4%8D%E5%88%B6">DNA双链复制</a>的原理，在生物体外复制特定DNA片段的核酸合成技术。透过这项技术，可在短时间内大量扩增<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title=%E7%9B%AE%E7%9A%84%E5%9F%BA%E5%9B%A0&action=edit&redlink=1">目的基因</a>（标的基因）[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%81%9A%E5%90%88%E9%85%B6%E9%93%BE%E5%BC%8F%E5%8F%8D%E5%BA%94#cite_note-1">1]</a>[<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%81%9A%E5%90%88%E9%85%B6%E9%93%BE%E5%BC%8F%E5%8F%8D%E5%BA%94#cite_note-2">2]</a>，而不必依赖<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%85%B8%E6%A1%BF%E8%8F%8C">大肠杆菌</a>或<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%85%B5%E6%AF%8D%E8%8F%8C">酵母菌</a>等生物体。DNA 体外扩增的实现首先基于DNA半保留复制原理，还有碱基互补配对原则，即复制的过程中双链DNA会解链，由双链变成单链，温度一般为95℃；之后温度降下来，引物会结合到DNA单链上，在DNA聚合酶的作用下，把游离的dNTP按照碱基互补配对原则结合到单链上，形成一条由旧链和新链杂合成的新的双链DNA。这个过程可概括为‘变性-退火-延伸’三个基本步骤。</p>
-<h3 id="25-内含子与外显子"><a href="#25-内含子与外显子" class="headerlink" title="25.内含子与外显子"></a>25.内含子与外显子</h3><p><strong>内含子</strong>（英语：Intron）是一个<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%9F%BA%E5%9B%A0">基因</a>中非编码<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/DNA">DNA</a>片段，它分开相邻的<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%A4%96%E6%98%BE%E5%AD%90">外显子</a>。更精确的定义是：<strong>内含子</strong>是阻断基因<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E7%B7%9A%E6%80%A7">线性</a>表达的序列。DNA上的内含子会被<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E8%BD%AC%E5%BD%95">转录</a>到<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%89%8D%E4%BF%A1%E4%BD%BF%E6%A0%B8%E7%B3%96%E6%A0%B8%E9%85%B8">前mRNA</a>中，但RNA上的内含子会在RNA离开<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E7%BB%86%E8%83%9E%E6%A0%B8">细胞核</a>进行<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E8%BD%AC%E8%AF%91">转译</a>前被<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/RNA%E5%89%AA%E6%8E%A5">剪除</a>。在成熟<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/MRNA">mRNA</a>被保留下来的基因部分被称为<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%A4%96%E6%98%BE%E5%AD%90">外显子</a>。<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E7%9C%9F%E6%A0%B8%E7%94%9F%E7%89%A9">真核生物</a>的基因含有外显子和内含子，是前者区别<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%8E%9F%E6%A0%B8%E7%94%9F%E7%89%A9">原核生物</a>的特征之一。</p>
-<p><img src="/../images/1920px-Pre-mRNA_to_mRNA.png" alt="前体RNA的剪接"></p>
-<p><strong>外显子</strong>：断裂基因中的编码序列。外显子是真核生物基因的一部分。它在剪接（splicing）后会被保存下来，并可以在蛋白质生物合成过程中被表达为蛋白质。外显子是最后出现在成熟RNA中的基因序列，又称表达序列。</p>
-<p>外显子既存在于最初的转录产物中，也存在于成熟的RNA分子中的核苷酸序列。</p>
-<p><img src="/../images/format,f_auto.png" alt="img"></p>
-<p>剪接方式并不是唯一的（参看替代剪接），所以外显子只能在成体mRNA中被看出。即使是使用生物信息学方法，要精确预测外显子的位置也是非常困难的，外显子的识别及其拼接都是难题。 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%9C%9F%E6%A0%B8%E7%94%9F%E7%89%A9">真核生物</a>的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%9F%BA%E5%9B%A0">基因</a>，其线性表达被<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%86%85%E5%90%AB%E5%AD%90">内含子</a>阻断，这就是所谓的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%96%AD%E8%A3%82%E5%9F%BA%E5%9B%A0">断裂基因</a>（英语splitgene），该现象的发现者RichardJ.Roberts和PhillipA.Sharp获得了1993年<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%A5%96">诺贝尔奖</a>。</p>
-<h3 id="26-RNA的种类"><a href="#26-RNA的种类" class="headerlink" title="26.RNA的种类"></a>26.RNA的种类</h3><p><strong>mRNA</strong></p>
-<p>依据DNA序列转录而成的蛋白质合成模板</p>
-<p><strong>tRNA</strong></p>
-<p>mRNA上遗传密码的识别者和氨基酸的转运者</p>
-<p><strong>rRNA</strong></p>
-<p>组成核糖体（蛋白质合成的机械）的部分</p>
-<h3 id="27-stem-cell"><a href="#27-stem-cell" class="headerlink" title="27.stem cell"></a>27.stem cell</h3><p><strong>干细胞</strong>（英语：stem cell）是原始且未特化的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BB%86%E8%83%9E">细胞</a>，它是未充分分化、具有再生各种组织器官的潜在功能的一类细胞。干细胞存在所有多细胞<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B5%84%E7%B9%94_(%E7%94%9F%E7%89%A9%E5%AD%B8)">组织</a>里，能经由<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9C%89%E7%B5%B2%E5%88%86%E8%A3%82">有丝分裂</a>与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%88%86%E5%8C%96">分化</a>来<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BB%86%E8%83%9E%E5%88%86%E8%A3%82">分裂</a>成多种的特化细胞，而且可以利用自我更新来提供更多干细胞。对哺乳动物来说，干细胞分为两大类：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%83%9A%E8%83%8E%E5%B9%B9%E7%B4%B0%E8%83%9E">胚胎干细胞</a>与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%88%90%E4%BD%93%E5%B9%B2%E7%BB%86%E8%83%9E">成体干细胞</a>，<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%83%9A%E8%83%8E%E5%B9%B9%E7%B4%B0%E8%83%9E">胚胎干细胞</a>取自<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9B%8A%E8%83%9A">囊胚</a>里的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%85%A7%E7%B4%B0%E8%83%9E%E5%9C%98">内细胞团</a>；而<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%88%90%E4%BD%93%E5%B9%B2%E7%BB%86%E8%83%9E">成体干细胞</a>则来自各式各样的组织。在成体组织里，间叶干细胞与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%89%8D%E4%BD%93%E7%BB%86%E8%83%9E">前体细胞</a>担任身体的修复系统，补充成体组织。在胚胎发展阶段，干细胞不仅能分化为所有的特化细胞- 外胚层，内胚层和中胚层(参考<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E5%A4%9A%E8%83%BD%E5%B9%B2%E7%BB%86%E8%83%9E">人工多能干细胞</a>)，而且能维持新生组织的正常转移，例如血液、皮肤或肠组织。</p>
-<h3 id="28-四分位距（interquartile-range，IQR）"><a href="#28-四分位距（interquartile-range，IQR）" class="headerlink" title="28.四分位距（interquartile range，IQR）"></a>28.四分位距（interquartile range，IQR）</h3><p>四分位距，又称四分差。是描述统计学中的一种方法，以确定第三四分位数和第一四分位数的区别。与方差、标准差一样，表示统计资料中各变量分散情形，但是四分差更多为一种稳健统计（robust statistics）</p>
-<p>Def:</p>
-<p>四分位距通常是用来构建箱型图，以及对概率分布的简要图表概述。对一个对称性分布数据（其中位数必然位于第三四分位数与第一四分位数的算数平均数），二分之一的四分差等于绝对中位差（MAD)。中位数是集中趋势的反映。</p>
-<p>公式：$IQR &#x3D; Q3 - Q1$</p>
-<h4 id="举个例子：图表中数据"><a href="#举个例子：图表中数据" class="headerlink" title="举个例子：图表中数据"></a>举个例子：图表中数据</h4><table>
-<thead>
-<tr>
-<th>数列</th>
-<th>参数</th>
-<th>四分差</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>102</td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td>104</td>
-<td></td>
-</tr>
-<tr>
-<td>3</td>
-<td>105</td>
-<td>Q1</td>
-</tr>
-<tr>
-<td>4</td>
-<td>107</td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td>108</td>
-<td></td>
-</tr>
-<tr>
-<td>6</td>
-<td>109</td>
-<td>Q2 (中位数)</td>
-</tr>
-<tr>
-<td>7</td>
-<td>110</td>
-<td></td>
-</tr>
-<tr>
-<td>8</td>
-<td>112</td>
-<td></td>
-</tr>
-<tr>
-<td>9</td>
-<td>115</td>
-<td>Q3</td>
-</tr>
-<tr>
-<td>10</td>
-<td>118</td>
-<td></td>
-</tr>
-<tr>
-<td>11</td>
-<td>118</td>
-<td></td>
-</tr>
-</tbody></table>
-<p>从这个表格中，我们可以算出四分差的距离为 115− 105 &#x3D; 10。</p>
-<h3 id="29-ERCC"><a href="#29-ERCC" class="headerlink" title="29.ERCC"></a>29.ERCC</h3><p>External RNA Control Consortium (ERCC)</p>
-<p>目前常用的ERCC版本内包含了176条RNA序列，这些RNA序列是从一些物种的DNA转录得到的，编号从ERCC-00001到ERCC-00176，所有对应的编号的序列全部可以从网上直接搜索下载。</p>
-<p>目前，已经有非常成熟的商业化的ERCC序列，其中的176条RNA组成的一个库（pool）也是经过特殊设计的。不是简单的等量混合，而是不同的pool会对176条序列分成很多小库（subpool），然后通过不同的比例对这些subpool进行混合，然后形成不同的配比比例。在购买商业化的ERCC序列时，一定要注意下载对应版本的绝对定量信息。当然，有些商业化的ERCC里面也不是包含全部176条标准序列。</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/52063724">https://zhuanlan.zhihu.com/p/52063724</a></p>
-<h3 id="30-transcript"><a href="#30-transcript" class="headerlink" title="30.transcript"></a>30.transcript</h3><p>转录本是由一条<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%9F%BA%E5%9B%A0/227875">基因</a>通过<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%BD%AC%E5%BD%95/1503653">转录</a>形成的一种或多种可供编码<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%9B%8B%E7%99%BD%E8%B4%A8/309120">蛋白质</a>的成熟的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/mRNA/614634">mRNA</a>。</p>
-<p>也称为剪切体</p>
-<p>一条基因通过<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%86%85%E5%90%AB%E5%AD%90">内含子</a>的不同剪接可构成不同的转录本。设计转录本实验可以研究内含子剪切机制、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%A1%A8%E8%A7%82%E9%81%97%E4%BC%A0">表观遗传</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/RNA%E7%BC%96%E8%BE%91/3764202">RNA编辑</a>等，通常是考察一条基因对应的不同转录本的调节机制等。</p>
-
-      
+    <div id="post0">
+        <p>五月 11, 2022</p>
+        <h2><a href="/2022/05/11/linux/" title="linux" class="posttitle">linux</a></h2>
+        <p class="summary">12345678910111213141516171819202122介绍下Shell中的$&#123;&#125...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" data-id="cl36zzdh000061w0ahe3wa71k" data-title="日常积累" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/" rel="tag">生物信息</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-关于配置hexo-github" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" class="article-date">
-  <time class="dt-published" datetime="2022-04-08T02:06:15.000Z" itemprop="datePublished">2022-04-08</time>
-</a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E9%85%8D%E7%BD%AEtips/">配置tips</a>
-  </div>
+</div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <div id="primary">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/">关于配置hexo+github</a>
-    </h1>
-  
+<div class="post">
+    <a href="/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" title="日常积累">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 08, 2022</p>
+        <h3><a href="/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/" title="日常积累" class="posttitle">日常积累</a></h3>
+        <p>
+[TOC]
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
+1.omics 组学组学（英语：omics）通常指生物学中对各类研究对象（一般为生物分子）的集合所进行的系统性研究，例如，基因组学、蛋白质...</p>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://https//crawlerwps.github.io/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" data-id="cl36zzdgy00031w0a75i32nmr" data-title="关于配置hexo+github" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Kategorien</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%A7%AF%E6%B0%B4%E6%88%90%E6%B8%8A/">小知识积水成渊</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%85%8D%E7%BD%AEtips/">配置tips</a></li></ul>
+<div class="post">
+    <a href="/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" title="关于配置hexo+github">
+        <img src="/img/welcome-cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 08, 2022</p>
+        <h3><a href="/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/" title="关于配置hexo+github" class="posttitle">关于配置hexo+github</a></h3>
+        <p></p>
     </div>
-  </div>
+</div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-%E5%B0%8F%E6%8A%80%E5%B7%A7/" rel="tag">linux 小技巧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/" rel="tag">生物信息</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/linux-%E5%B0%8F%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">linux 小技巧</a> <a href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/" style="font-size: 10px;">生物信息</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/05/11/linux/">linux</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/08/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/">日常积累</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/08/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AEhexo-github/">关于配置hexo+github</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 crawler<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+</div>
+<div id="preview"></div>
 
 
 
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 </html>
